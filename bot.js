@@ -7,7 +7,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN)
 const welcomeMessage = 'Welcome to the URL Shortener bot !' +
     '\nWith this bot, you can shorten your URLs using bit.ly' +
     '\n\n*Bot Instructions :*' +
-    '\n\n/short Create a short URL' +
+    '\n\n/short Create a short URL'
 
 bot.start((ctx) => ctx.reply(welcomeMessage))
 
