@@ -14,12 +14,12 @@ bot.start((ctx) => ctx.reply(welcomeMessage))
 bot.command('short', ctx => {
     ctx.reply('Please enter your long URL :')
     bot.hears(new RegExp(/.*/i), async replyCtx => {
-        const result = await bitly.shorten(ctx.message.chat.id, replyCtx.message.text)
+        const result = await bitly.shorten(replyCtx.message.text)
         if(result.success) {
             replyCtx.reply('Here is your shortened URL :')
             replyCtx.reply(result.link)
         } else {
-            replyCtx.reply(replyCtx.error)
+            replyCtx.reply(result.error)
         }
     })
 })

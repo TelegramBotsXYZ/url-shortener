@@ -18,6 +18,7 @@ module.exports = {
                 link: data.link
             }
         } catch (e) {
+            console.log(e.response)
             return {
                 success: false,
                 error: 'An error occurred while shortening your URL, please check if your URL is correct.'
