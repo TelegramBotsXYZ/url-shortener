@@ -27,6 +27,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN)
 
 const welcomeMessage = 'Welcome to the URL Shortener bot !' +
     '\nWith this bot, you can shorten your URLs using shorte.st' +
+    '\n\n👉️ Contact @TgBotsXyz to get your custom telegram bots !' +
     '\n\n*Bot Instructions :*' +
     '\n\n/short Create a short URL'
 
