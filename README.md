@@ -1,6 +1,6 @@
 # TelegramBotsXYZ : URL Shortener
 
-This bot uses bit.ly to shorten long URLs
+This bot uses shorte.st to shorten long URLs
 
 ## Usage
 
