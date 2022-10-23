@@ -9,7 +9,7 @@ const welcomeMessage = 'Welcome to the URL Shortener bot !' +
     '\n\n*Bot Instructions :*' +
     '\n\n/short Create a short URL'
 
-bot.start((ctx) => ctx.reply(welcomeMessage))
+bot.start((ctx) => ctx.replyWithMarkdown(welcomeMessage))
 
 bot.command('short', ctx => {
     ctx.reply('Please enter your long URL :')
