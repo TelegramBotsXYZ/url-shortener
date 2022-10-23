@@ -9,6 +9,7 @@ const shorten = async url => {
             { 'urlToShorten': url },
             { headers: { 'public-api-token': process.env.API_KEY } }
         )
+        console.log(result.data)
         return {
             success: result?.data?.status === 'ok',
             link: result?.data?.shortenedUrl
@@ -35,7 +36,6 @@ bot.command('short', ctx => {
     ctx.reply('Please enter your long URL :')
     bot.hears(new RegExp(/.*/i), async replyCtx => {
         const result = await shorten(replyCtx.message.text)
-            console.log(result)
         if(result.success && result.link) {
             replyCtx.reply('Here is your shortened URL :')
             replyCtx.reply(result.link)
