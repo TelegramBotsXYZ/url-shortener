@@ -1,3 +1,5 @@
+## [DEPRECATED] We are now using a custom API & custom workflow for our bot
+
 # TelegramBotsXYZ : URL Shortener
 
 This bot uses shorte.st to shorten long URLs
